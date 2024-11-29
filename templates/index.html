@@ -532,109 +532,77 @@
 </body>
 
 
-
-<!--trained model-->
+<!-- Translation Form -->
 <div class="container">
-    <h1>ChatLearn Translation English to Amharic</h1>
-    <div class="translation-layout">
-        <textarea id="input-text" placeholder="Enter text to translate"></textarea>
-        <div class="translation-result">
-            <h2>Translated Amharic Text</h2>
-            <p id="translated-text"></p>
-        </div>
-    </div>
+    <h1>ChatLearn Translation</h1>
+    <textarea id="input-text" placeholder="Enter text to translate"></textarea>
     <button id="translate-btn">Translate</button>
+    <h2>Translated Text</h2>
+    <div id="translation-result" class="translation-result"></div>
 </div>
 
 <style>
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-}
+    textarea {
+        width: 80%;
+        height: 100px;
+        margin-bottom: 10px;
+    }
 
-.translation-layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    margin-bottom: 10px;
-}
+    button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
 
-textarea {
-    width: 48%; /* Adjust width as needed */
-    height: 100px;
-    margin-right: 2%; /* Space between the textarea and result */
-}
+    button:hover {
+        background-color: #0056b3;
+    }
 
-.translation-result {
-    width: 48%; /* Adjust width as needed */
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#translated-text {
-    margin-top: 10px;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #333;
-}
+    .translation-result {
+        margin-top: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
 </style>
 
 <script>
-document.getElementById("translate-btn").addEventListener("click", async function () {
-    const inputText = document.getElementById("input-text").value;
+    document.getElementById("translate-btn").addEventListener("click", async function () {
+        const inputText = document.getElementById("input-text").value;
+        const resultContainer = document.getElementById("translation-result");
 
-    const response = await fetch("/translate", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ text: inputText }),
+        try {
+            // Display a loading message while waiting for the response
+            resultContainer.textContent = "Translating...";
+
+            // Fetch the translation from the server
+            const response = await fetch("/translate", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ text: inputText }),
+            });
+
+            if (!response.ok) {
+                throw new Error("Failed to fetch translation");
+            }
+
+            const data = await response.json();
+
+            // Display the translated text
+            resultContainer.textContent = data.translated_text || "No translation available.";
+        } catch (error) {
+            console.error("Error during translation:", error);
+            resultContainer.textContent = "An error occurred while translating.";
+        }
     });
-
-    const data = await response.json();
-    document.getElementById("translated-text").textContent = data.translated_text;
-});
 </script>
 
-
-<script>document.getElementById("translate-btn").addEventListener("click", async function () {
-    const inputText = document.getElementById("input-text").value;
-
-    const response = await fetch("/translate", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ text: inputText }),
-    });
-
-    const data = await response.json();
-    document.getElementById("translated-text").textContent = data.translated_text;
-});
-</script>
 </body>
 </html>
