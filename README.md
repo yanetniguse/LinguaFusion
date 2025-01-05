@@ -41,7 +41,7 @@ Include screenshots or demo images here to give users a preview of the interface
 Clone the Repository:
 bash
 Copy code
-git clone https://github.com/yourusername/linguafusion.git
+git clone https://github.com/yanetniguse/linguafusion.git   
 Navigate to the project folder:
 bash
 Copy code
@@ -74,9 +74,8 @@ Advanced Chatbot Features: Enhance conversation capabilities using more sophisti
 📬 Contact & Support
 For questions or feedback, feel free to reach out:
 
-Email: your-email@example.com
-LinkedIn: Your LinkedIn
-Twitter: @yourhandle
+
+LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/yanetniguse7)
 ❤️ Acknowledgements
 Special thanks to Fyori for supporting this project and to the open-source community for providing the resources that made this possible!
 
