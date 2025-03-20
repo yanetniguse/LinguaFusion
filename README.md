@@ -75,7 +75,7 @@ Advanced Chatbot Features: Enhance conversation capabilities using more sophisti
 For questions or feedback, feel free to reach out:
 
 
-LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/yanetniguse7)
+LinkedIn: [My LinkedIn](https://www.linkedin.com/in/yanetniguse7)
 ❤️ Acknowledgements
 Special thanks to Fyori for supporting this project and to the open-source community for providing the resources that made this possible!
 
