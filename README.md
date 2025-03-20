@@ -117,7 +117,15 @@ python app.py
 📬 Contact & Support
 For questions, suggestions, or collaboration opportunities, reach out:
 
-📩 LinkedIn: Yanet Niguse
+📩 LinkedIn: **[Yanet Niguse](https://www.linkedin.com/in/yanetniguse7)(https://www.linkedin.com/in/yanetniguse7)**
 
-❤️ Acknowledgements
-A special thanks to Fyori and the open-source community for supporting this project!  
+### **❤️ Acknowledgements**  
+
+We sincerely appreciate the contributions and support that made **LinguaFusion** possible.  
+
+🔹 **[Professor Edward Ombui, Ph.D.](https://www.linkedin.com/in/edward-ombui/)** – For his invaluable mentorship in AI and NLP.  
+🔹 **[Professor Fredrick Ogore](https://www.linkedin.com/in/fredrick-ogore-61435620/)** – For his guidance in system design and development.  
+🔹 **Fyori** – For their collaboration in developing the **translation ML model**, contributing significantly to the AI-driven capabilities of LinguaFusion.  
+🔹 **The Open-Source Community** – For providing the tools, resources, and inspiration that fueled this project.  
+
+Your support and expertise have been instrumental in shaping **LinguaFusion** into an impactful and innovative platform. 🚀
