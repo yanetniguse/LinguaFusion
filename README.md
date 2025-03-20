@@ -89,70 +89,35 @@ python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
- **challenges**
-
-Dataset Size: With only 2500 lines, the dataset was relatively small, limiting the model's ability to generalize effectively.
-
-Tokenization Mismatch: Using SentencePieceProcessor caused a mismatch between tokenized and padded English and Amharic vocabularies. Padding resolved part of the issue.
-
-Training from Scratch: Training the model from scratch was difficult, so the Helsinki-NLP/opus-mt-en-mul pre-trained model from Hugging Face was used as a foundation.
-
-Training Errors: Training with custom tokenization led to errors, so the pre-trained Helsinki-NLP/opus-mt-en-mul tokenizer was adopte
-
-Out of Memory (OOM) Issues: Memory limitations occurred during training, which were resolved by reducing the batch size and increasing gradient accumulation steps to optimize resource usage.
-
-Amharic Complexity: Amharic's complex grammar and morphology presented challenges for accurate translations.
-
-Overfitting and Underfitting: One of the main challenges was avoiding overfitting or underfitting the model. Striking the right balance in model complexity and the amount of training data was necessary to improve the generalization capability of the model.
-
-Hyperparameter Tuning: Finding the best hyperparameters for the translation model was challenging and required multiple iterations to optimize the learning rate, batch size, and other parameters.
-
-Sentence Length and Complexity: The model sometimes struggled with translating longer or more complex sentences accurately. Simple sentences worked well, but maintaining accuracy with more involved structures required additional training and adjustments.
-
-***improvments***
-
-Larger and More Diverse Dataset: To improve translation accuracy, incorporating a larger dataset with more varied topics, sentence structures, and vocabulary would be beneficial. This would help the model handle a wider range of text and improve its ability to translate complex or idiomatic sentences.
-
-Advanced Models: Implementing more advanced and state-of-the-art models such as Transformer-based architectures (e.g., Transformer, GPT, BERT) could improve the quality of translations. These models have shown significant improvements in language understanding and translation tasks.
-
-Real-Time Suggestions and Corrections: Adding a feature where the system provides real-time feedback or suggestions during the translation process can make it more interactive and engaging.
-
-use Rule-based training can improve your model by fixing grammar issues, ensuring consistency, resolving ambiguities, and augmenting data. Combining it with neural models can refine translations, especially for complex languages like Amharic. However, it can be challenging to scale and maintain.
-
-**conclusion**
-
- English-to-Amharic translation model, integrated with a website for easy access, successfully utilizes the Helsinki-NLP/opus-mt-en-mul pre-trained model. It addresses challenges like tokenization mismatches and memory constraints through optimizations such as reducing batch sizes and increasing gradient steps. While the model achieves a BLEU score of 38.05 with 2500 sentences, there is still room for improvement, particularly in handling complex Amharic grammar. The website's integration allows users to easily interact with the model for real-time translations. Future enhancements could focus on improving data quality, expanding the dataset, and integrating rule-based methods to refine accuracy and support additional languages, making the tool an even more powerful resource for language learning and cross-cultural communication.
 ### **🔹 Run the App:**  
 ```bash
 python app.py
 ```
 
----
+ 📊 Challenges & Solutions
+🔴 Key Challenges:
+🚧 Limited Dataset – Only 2,500 sentences affected translation accuracy.
+🚧 Tokenization Mismatch – Fixing misalignment in English-Amharic vocabulary.
+🚧 Memory Constraints – Overcame out-of-memory (OOM) issues in training.
+🚧 Complex Amharic Grammar – Adapting ML models for better fluency.
+🚧 Overfitting & Hyperparameter Tuning – Fine-tuning the model for better generalization.
 
-## 🤝 **Contributing**  
-We welcome contributions from developers, AI researchers, and language educators! To contribute:  
+✅ Solutions & Improvements:
+✔ Expanded Dataset – Larger, more diverse training data for better translations.
+✔ Pre-Trained Model Usage – Leveraged Helsinki-NLP/opus-mt-en-mul for a stronger foundation.
+✔ Optimized Model Training – Adjusted batch sizes & gradient accumulation steps.
+✔ Rule-Based AI Enhancements – Combined ML with linguistic rules for accuracy.
 
-1️⃣ **Fork** the repository.  
-2️⃣ **Create a new branch** (feature/your-feature-name).  
-3️⃣ **Make your changes and commit.**  
-4️⃣ **Open a pull request for review.**  
+🚀 Future Enhancements
+🔹 🌎 Multi-Language Support – Expanding to more languages & dialects.
+🔹 🎙️ Speech Recognition – Enable voice input & pronunciation feedback.
+🔹 🧠 Smarter AI Chatbot – Enhanced NLP for real-world conversations.
+🔹 📈 Adaptive Learning – Personalized lessons based on learner progress.
 
----
+📬 Contact & Support
+For questions, suggestions, or collaboration opportunities, reach out:
 
-## 🙌 **Future Enhancements**  
+📩 LinkedIn: Yanet Niguse
 
-🚀 **Multi-Language Support:** Expand to additional languages with advanced ML models.  
-🎙️ **Speech Recognition:** Enable **voice input** and text-to-speech for pronunciation training.  
-🧠 **Smarter Chatbot:** Improve AI responses with **better NLP models** for deeper conversations.  
-
----
-
-## 📬 **Contact & Support**  
-For questions, suggestions, or collaboration opportunities, feel free to reach out:  
-
-📩 **LinkedIn:** [Yanet Niguse](https://www.linkedin.com/in/yanetniguse7)  
-
----
-
-## ❤️ **Acknowledgements**  
-Special thanks to **Fyori** for their support, and to the **open-source community** for providing the tools that made LinguaFusion possible!  
+❤️ Acknowledgements
+A special thanks to Fyori and the open-source community for supporting this project!  
