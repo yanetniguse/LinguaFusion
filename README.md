@@ -27,6 +27,7 @@ Build a **scalable, user-friendly** language-learning platform with:
 ✔ **📊 Quizzes & Assessments** – Reinforce learning with tests that offer **real-time scoring**.  
 ✔ **🔤 Translation Tool** – AI-powered translations enhance language comprehension.  
 ✔ **📱 Responsive UI** – Optimized for both desktop and mobile use.  
+✅ **🧠 ML Model Training** – [Colab Notebook](https://colab.research.google.com/drive/1iVlxhtUhVCNgru1botaAjpqWTdJ7kvYy?usp=sharing) for AI pipeline.
 
 ---
 
@@ -98,26 +99,33 @@ pip install -r requirements.txt
 python app.py
 ```
 
- 📊 Challenges & Solutions
-🔴 Key Challenges:
-🚧 Limited Dataset – Only 2,500 sentences affected translation accuracy.
-🚧 Tokenization Mismatch – Fixing misalignment in English-Amharic vocabulary.
-🚧 Memory Constraints – Overcame out-of-memory (OOM) issues in training.
-🚧 Complex Amharic Grammar – Adapting ML models for better fluency.
-🚧 Overfitting & Hyperparameter Tuning – Fine-tuning the model for better generalization.
+---
 
-✅ Solutions & Improvements:
-✔ Expanded Dataset – Larger, more diverse training data for better translations.
-✔ Pre-Trained Model Usage – Leveraged Helsinki-NLP/opus-mt-en-mul for a stronger foundation.
-✔ Optimized Model Training – Adjusted batch sizes & gradient accumulation steps.
-✔ Rule-Based AI Enhancements – Combined ML with linguistic rules for accuracy.
+## 📊 **Challenges & Solutions**
 
-🚀 Future Enhancements
-🔹 🌎 Multi-Language Support – Expanding to more languages & dialects.
-🔹 🎙️ Speech Recognition – Enable voice input & pronunciation feedback.
-🔹 🧠 Smarter AI Chatbot – Enhanced NLP for real-world conversations.
-🔹 📈 Adaptive Learning – Personalized lessons based on learner progress.
+### 🔴 **Key Challenges:**  
+🚧 **Limited Dataset** – Only 2,500 sentence pairs initially available.  
+🚧 **Tokenization Mismatch** – Misalignment between English-Amharic vocabularies.  
+🚧 **Memory Constraints** – Out-of-memory (OOM) issues during model training.  
+🚧 **Complex Amharic Grammar** – Struggles with fluency and sentence structure.  
+🚧 **Overfitting & Hyperparameter Tuning** – Difficulty in generalizing across contexts.
 
+### ✅ **Solutions & Improvements:**  
+✔ **Expanded Dataset** – Curated a larger and more diverse set of sentence pairs.  
+✔ **Pre-Trained Models** – Used `Helsinki-NLP/opus-mt-en-mul` as a strong foundation.  
+✔ **Optimized Training** – Adjusted batch sizes and used gradient accumulation to avoid OOM.  
+✔ **Hybrid AI Approach** – Combined ML with rule-based logic to improve grammar accuracy.
+
+---
+
+## 🚀 **Future Enhancements**
+
+🔹 **🌎 Multi-Language Support** – Include more languages and dialects.  
+🔹 **🎙️ Speech Recognition** – Voice input and pronunciation feedback.  
+🔹 **🧠 Smarter AI Chatbot** – Real-world conversation handling via enhanced NLP.  
+🔹 **📈 Adaptive Learning** – Personalize content based on individual progress and behavior.
+
+---
 📬 Contact & Support
 For questions, suggestions, or collaboration opportunities, reach out:
 
