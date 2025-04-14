@@ -1,6 +1,10 @@
-### **🌐 LinguaFusion: AI-Powered Interactive Language Learning Platform**  
+### 🌐 **LinguaFusion: AI-Powered Interactive Language Learning Platform**  
+🔗 **Live Demo:** [https://lingua-jade.vercel.app/](https://lingua-jade.vercel.app/)  
+📊 **ML Model Training (Google Colab):** [View Notebook](https://colab.research.google.com/drive/1iVlxhtUhVCNgru1botaAjpqWTdJ7kvYy?usp=sharing)
 
-LinguaFusion is an innovative web-based language-learning platform that combines **machine learning-driven translation** (English to Amharic) with **interactive lessons** (English, Amharic, Spanish, and French). It features a **built-in AI chatbot** for real-time conversation practice, structured learning modules, and progress-tracking quizzes. This project showcases the power of **AI, NLP, and interactive learning** to make language acquisition more engaging and effective.  
+**LinguaFusion** is an innovative web-based platform that revolutionizes language learning by combining **AI-powered translation** (English to Amharic) with **interactive multilingual lessons** in English, Amharic, Spanish, and French.  
+
+With features like a built-in **AI chatbot** for real-time conversation, structured lessons, and dynamic quizzes, LinguaFusion empowers users to learn languages in an engaging, effective, and personalized way.
 
 ---
 
